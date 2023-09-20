@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="50dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:hint="Enter first number"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="215dp"
+            tools:layout_editor_absoluteY="191dp" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="Enter second number"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="191dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="53dp"
+            android:layout_height="54dp"
+            android:text="+"
+            tools:layout_editor_absoluteX="306dp"
+            tools:layout_editor_absoluteY="324dp"
+            android:onClick="add"/>
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="53dp"
+            android:layout_height="54dp"
+            android:text="-"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="324dp"
+            android:onClick="sub"/>
+
+    <Button
+        android:id="@+id/multi"
+        android:layout_width="53dp"
+        android:layout_height="54dp"
+        android:text="*"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="324dp"
+        android:onClick="multi"/>
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="53dp"
+        android:layout_height="54dp"
+        android:text="/"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="324dp"
+        android:onClick="div"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Result"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="493dp"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>
